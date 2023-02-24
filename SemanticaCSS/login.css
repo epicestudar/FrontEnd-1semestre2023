@@ -1,0 +1,22 @@
+body{
+    background-color: rgb(102, 51, 153);
+}
+
+.parte5{
+    width: 100%;
+    height: 800px;
+    text-align: center;
+}
+
+.parte5 img{
+    width: 60%;
+    height: 100px;   
+}
+
+.parte5 label{
+    color: red;
+}
+
+.parte5 input{
+    color: blue;
+}
