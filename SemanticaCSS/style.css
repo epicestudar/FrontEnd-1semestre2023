@@ -33,3 +33,13 @@ body {
     font-family: 'Times New Roman', Times, serif;
     color: azure;
 }
+header {
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    position: fixed;
+    z-index: 1;
+    top: 0;
+}

@@ -1,0 +1,19 @@
+.banner {
+    width: 90%;
+    height: 600px;
+    padding: 60px;
+    margin: 0 auto;
+    display: table;
+    box-shadow: -1px -2px 5px 13px rgba(230, 225, 225, 0.75);
+}
+
+.banner img {
+    width: 40%;
+    height: 500px;
+    float: right;
+}
+.banner .texto {
+    margin-top: 50px;
+    width: 50px;
+    font-size: 22px;
+}
