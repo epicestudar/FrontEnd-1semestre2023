@@ -1,0 +1,73 @@
+body  {
+    height: 200px;
+    background-color: rgb(58, 30, 59);
+  margin: 0;
+  }
+
+.banner {
+    width: 100%;
+    height: 600px;
+    padding: 60px;
+    margin: 0 auto;
+    display: table;
+}
+
+.banner img {
+    width: 40%;
+    height: 500px;
+    float: right;
+}
+.banner .texto {
+    margin-top: 50px;
+    width: 50%;
+    font-size: 22px;
+}
+#menu {
+    width: 100%;
+    height: 65px;
+    background-color: rgb(112, 24, 24);
+    display: table;
+}
+#menu img {
+    margin-left: 100px;
+    height: 40px;
+    
+
+}
+.linkMenu {
+    color: aliceblue;
+    font-size: 2em;
+    margin-left: 20px;
+    margin-right: 20px;
+    float: right;
+}
+
+.banner h1{
+    color: rgb(191, 204, 13);
+}
+.banner P{
+    color: white;
+}
+.bannerdois {
+    width: 100%;
+    height: 600px;
+    padding: 60px;
+    margin: 0 auto;
+    display: table;
+}
+.bannerdois img{
+    width: 40%;
+    height: 500px;
+    float: right;
+}
+.bannerdois .textodois{
+    margin-top: 50px;
+    width: 50%;
+    font-size: 22px;
+}
+.bannerdois h1{
+    color: rgb(191, 204, 13);
+}
+.bannerdois p{
+    color: white;
+}
