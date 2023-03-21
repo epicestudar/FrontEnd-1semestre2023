@@ -1,0 +1,53 @@
+body {
+    background-color: black;
+    margin: 0;
+}
+.nav {
+    background-color: aliceblue;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav img {
+    height: 70px;
+}
+
+.nav .linkMenu {
+    text-decoration: none;
+    font-size: 24px;
+    color: black;
+}
+.nav .menu {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+.nav .hamburger {
+    display: none;
+}
+.parte1 {
+    background-color: rgb(37, 35, 126);
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    height: 80%;
+    align-items: center;
+}
+.parte1 .img {
+    float: left;
+    width: 40%;
+    height: 550px;
+}
+.parte1 .parteum h1 {
+    color: rgb(212, 102, 23);
+    display: flex;
+}
+.parte1 .parteum p{
+    margin-top: 30px;
+    font-size: 22px;
+    color: white;
+    display: flex;
+
+}
