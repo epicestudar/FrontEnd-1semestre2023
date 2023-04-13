@@ -1,0 +1,210 @@
+body {
+    background-image: url(img/fundodois.png);
+    background-size: 325px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+.menu .btn {
+    padding: 10px 8px;
+    width: 50px;
+    color: white;
+    background: rgb(97, 161, 23);
+    border: 1px solid #2c2828;
+    border-radius: 5px;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+    float: right;
+}
+.btn:hover {
+    background: rgb(147, 233, 10);
+    transition: background 1s;
+}
+.menu {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    background-color: #2c2828;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.linkMenu {
+    color: aliceblue;
+    font-size: 1.5em;
+    text-decoration: none;
+    padding: 10px 8px;
+    border: 1px solid #2c2828;
+    user-select: none;
+    cursor: pointer;
+}
+.linkMenu:hover {
+    transition: background 1.5s;
+    background: rgb(145, 104, 104);
+}
+.menu img{
+    height: 50px;
+}
+.redes {
+    background-color: rgb(112, 50, 34);
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+}
+.insta{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 8px 5px;
+    background: rgb(201, 22, 22);
+    border: 1px solid #2c2828;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.insta a{
+    color: white;
+    text-decoration: none;
+}
+.insta img{
+    width: 25px;
+}
+.insta:hover {
+    transition: background 1s;
+    background: rgb(236, 85, 85);
+}
+.wpp {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 8px 5px;
+    background: rgb(65, 184, 41);
+    border: 1px solid #2c2828;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.wpp:hover {
+    transition: background 1s;
+    background: rgb(21, 221, 21);
+}
+.wpp a{
+    color: white;
+    text-decoration: none;
+}
+.wpp img {
+    width: 25px;
+}
+.face {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 8px 5px;
+    background: rgb(29, 94, 151);
+    border: 1px solid #2c2828;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.face:hover {
+    transition: background 1s;
+    background: rgb(109, 109, 252);
+}
+.face a{
+    color: white;
+    text-decoration: none;
+}
+.face img {
+    width: 25px;
+}
+.footer {
+    background-color: rgb(24, 22, 44);
+    color: aliceblue;
+    font-family: sans-serif;
+    font-size: 13px;
+    padding: 10px;
+    flex: bottom;
+}
+.footer .rodape {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.footer .rodape .sobreNos{
+    width: 320px;
+}
+.footer .rodape .sobreNos h2{
+    text-align: center;
+}
+.footer .rodape .sobreNos p{
+    text-indent: 15px;
+}
+.footer .rodape .contato img{
+    width: 25px;
+    padding: 15px;
+}
+.rodape2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(78, 71, 92);
+    color: white;
+    height: 50px;
+}
+* { margin: 0; padding: 0; }
+.slider {
+    display: block;
+    height: 293px;
+    width: 600px;
+    margin: auto;
+    margin-top: 20px;
+    position: relative;
+}
+
+.slider li {
+    list-style: none;
+    position: absolute;
+}
+
+.slider img {
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    vertical-align: top;
+}
+.slider input {
+    display: none;
+}
+.slider label {
+    background-color: #000;
+    bottom: 10px;
+    cursor: pointer;
+    display: block;
+    height: 10px;
+    position: absolute;
+    width: 10px;
+    z-index: 10;
+}
+
+.slider li:nth-child(1) label {
+    left: 10px;
+}
+
+.slider li:nth-child(2) label {
+    left: 40px;
+}
+
+.slider li:nth-child(3) label {
+    left: 70px;
+}
+.slider img {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.slider li input:checked ~ img {
+    opacity: 1;
+    visibility: visible;
+    z-index: 10;
+}
