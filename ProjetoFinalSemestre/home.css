@@ -186,3 +186,100 @@ header{
 #prev-button{
     transform: rotate(180deg);
 }
+.texto-eventos{
+    text-align:left;
+    padding-left: 80px;
+}
+main.cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-color);
+    padding: 32px;
+}
+
+main.cards section.card .icon{
+    width: 64px;
+    height: 64px;
+}
+
+main.cards section.card img{
+    width: 100%;
+}
+
+main.cards section.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: rgb(6, 63, 44);
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    max-height: 456px;
+    margin-left: 32px;
+}
+
+main.cards section.card:first-child{
+    margin-left: 0;
+}
+
+main.cards section.card button{
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    border-radius: 32px;
+    border: 0;
+    cursor: pointer;
+    font-size: 80%;
+    font-weight: 500;
+    color: white;
+}
+main.cards section.card.forza button{
+    background: linear-gradient(to right, #681b1b, #e01414);
+}
+main.cards section.card.csgo button{
+    background: linear-gradient(to right, #3E8AFF, #BBDEFF);
+}
+main.cards section.card.fifa button{
+    background: linear-gradient(to right, #9F66FF, #DFCBFF);
+}
+
+main.cards section.card.forza{
+    box-shadow: 20px 20px 50px -30px #dbc4ff;
+}
+main.cards section.card.csgo{
+    box-shadow: 20px 20px 50px -30px #afd6ff;
+}
+main.cards section.card.fifa{
+    box-shadow: 20px 20px 50px -30px #ffc1d5;
+}
+
+main.cards section.card h3{
+    font-size: 100%;
+    margin: 16px 0;
+}
+
+main.cards section.card span{
+    font-weight: 300;
+    max-width: 240px;
+    font-size: 80%;
+    margin-bottom: 16px;
+}
+
+@media screen and (max-width: 720px) {
+    main.cards{
+        flex-direction: column;
+    }
+
+    main.cards section.card{
+        margin-left: 0;
+        margin-bottom: 32px;
+    }
+
+    main.cards section.card:last-child{
+        margin-bottom: 0;
+    }
+
+    main.cards section.card button{
+        font-size: 70%;
+    }
+}
