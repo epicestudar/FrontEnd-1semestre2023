@@ -265,6 +265,17 @@ main.cards section.card span{
     margin-bottom: 16px;
 }
 
+.texto-eventos h2::after{ 
+    content: '';
+    display:block;
+    width: 5rem;
+    height: 0.3rem;
+    background-color: purple;
+    margin: 0 auto;
+    position:absolute;
+    border-radius: 10px;
+}
+
 @media screen and (max-width: 720px) {
     main.cards{
         flex-direction: column;
