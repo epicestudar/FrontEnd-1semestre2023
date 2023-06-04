@@ -279,7 +279,7 @@ footer{
 }
 
 .container{
-    
+    font-family: 'Poppins', sans-serif;
     width: 85%;
    padding: 20px 60px 30px 40px;
     background: #1a1313;
@@ -338,11 +338,27 @@ footer{
     width: 75%;
     margin-left: 75px;
 }
+.right-side .topic-box::after{
+    content: '';
+    display:block;
+    width: 5rem;
+    height: 0.3rem;
+    background-color: rgb(28, 102, 6);
+    margin: 0 auto;
+    position:absolute;
+    border-radius: 10px;
+}
+
 .content .right-side .topic-box{
     font-size: 23px;
     font-weight: 600;
     color: #90562E;
 }
+.right-side p{
+    margin-top: 15px;
+    font-size: 15px;
+}
+
 .right-side .input-box{
     height: 50px;
     width: 100%;
@@ -365,8 +381,20 @@ footer{
 .right-side .input-box textarea{
     padding-top: 6px;
 }
+.right-side .button input{
+    background-color: #a89586;
+    border-radius: 0px 4px 0px 4px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.125rem;
+    padding: 0px 0.25rem;
+    color: #fff;
+    transition: all 0.5 ease;
+}
+
 .right-side .button input[type="button"]:hover{
     background: #c1ac9c;
+
 }
 @media (max-width: 950px){
     .cointainer{
