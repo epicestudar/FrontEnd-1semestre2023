@@ -276,3 +276,157 @@ footer{
         padding: 3rem 2rem;
     }
 }
+
+.container{
+    max-width: 350px;
+    min-height: 40vh;
+    margin-left: 450px;
+    margin-right: 450px;
+    background-color: rgb(41, 48, 2);
+    font-family: 'Poppins', sans-serif;
+    
+    justify-content: center;
+    
+    
+    
+    
+    padding: 2rem;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+}
+.content h2{
+    font-weight: 600;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.content h2::before{
+    content: '';
+    position: absolute;
+    height: 4px;
+    
+    width: 25px;
+    bottom: 1.5px;
+    left: 0;
+    border-radius: 8px;
+    background: #7f37c9;
+}
+.input-login{
+    position: relative;
+}
+.input-login input{
+    outline: none;
+    font-size: 0.9rem;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.input-login input::placeholder{
+    color: rgba(0, 0, 0, 0.5);
+}
+
+input[type="submit"]{
+    margin-top: 2rem;
+    padding: 0.4rem;
+    background: linear-gradient(to left, #4776e6, #8e54e9);
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 300;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+}
+input [type="submit"]:hover{
+    letter-spacing: 0.5px;
+    background: linear-gradient(to right #4776e6, #8e54e9);
+}
+.cadastrar{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+.cadastrar .span1{
+    color: rgba(0, 0, 0, 0.9);
+    font-size: 14.8px;
+    text-align: center;
+}
+.cadastrar .span2{
+    color: rgba(0, 0, 0, 0.9);
+    font-size: 14.8px;
+    text-align: center;
+}
+
+.cadastrar .social-media{
+    padding: 0.4rem;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    width: 100%;
+    cursor: pointer;
+}
+
+.cadastrar .social-media a{
+    text-decoration: none;
+    color: white;
+}
+
+.cadastrar .social-media .twitter{
+    border-radius: 5px 4px 4px 5px;
+    border: none;
+    margin-top: 1rem;
+    background: linear-gradient(to right, #56a7f2, #468aca);
+    transition: all 0.5s;
+}
+
+.cadastrar .social-media .facebook{
+    border-radius: 5px 4px 4px 5px;
+    border: none;
+    margin-top: 1rem;
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+    transition: all 0.5s;
+}
+
+.cadastrar .social-media .facebook:hover{
+    letter-spacing: 0.5px;
+    background: #305dac;
+}
+.cadastrar .social-media .twitter:hover{
+    letter-spacing: 0.5px;
+    background: #5aadfc;
+}
+.cadastrar .social-media a i{
+    margin: 0 0.5rem;
+    width: 15px;
+}
+.content .input-login:first-child{
+    margin-bottom: 1.5rem;
+}
+
+.input-login .underline::before{
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    bottom: -5px;
+    left: 0;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.input-login .underline::after{
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    bottom: -5px;
+    left: 0;
+    background: linear-gradient(45deg, #8e2de2, #4a00e0);
+    transform: scaleX(0);
+    transition: all .3s ease-in-out;
+    transform-origin: left;
+}
+.input-login input:focus ~ .underline::after{
+    transform: scaleX(1);
+}
