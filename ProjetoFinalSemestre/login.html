@@ -5,8 +5,135 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página de Login</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,600&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <header>
+        <a href="#" class="logo"><i class="ri-home-3-fill"></i><span>GameZone</span></a>
+
+        <ul class="navbar">
+            <li><a href="home.html" class="active">Home</a></li>
+            <li><a href="#">Abouts us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="suporte.html">Contact</a></li>
+        </ul>
+
+        <div class="main">
+            <a href="#" class="user"><i class="ri-user-3-fill"></i>Sign in</a>
+            <a href="cadastroCliente.html">Register</a>
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+    </header><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <div class="container">
+        <div class="content">
+            <h2>Login</h2>
+            <div class="input-login">
+                <input type="email" name="email" placeholder="Digite seu email" id="email" class="inputUser" required>
+                <div class="underline"></div>
+            </div>
+            <div class="input-login">
+                <input type="password" name="senha" placeholder="Digite sua senha" id="senha" class="inputUser" required>
+                <div class="underline"></div>
+            </div>
+
+            <input type="submit" name="submit" id="submit" value="Continue">
+        </div>
+
+        <div class="cadastrar">
+            <span>Ainda não tem uma conta? <a href="cadastroCliente.html">Cadastre-se aqui</a></span>
+        </div>
+           <div class="social-media">
+            <div class="twitter">
+                <a href="#">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
+            <div class="instagram"></div>
+           </div>
+    </div>
+
+    <footer>
+        <div id="footer_content">
+            <div id="footer_contacts">
+                <h2>GameZone</h2>
+                <p>Acredite nos seus sonhos!</p>
+
+                <div id="footer_social_media">
+                    <a href="#" class="footer-link" id="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#" class="footer-link" id="twitter">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+
+                    <a href="#" class="footer-link" id="facebook">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                </div>
+            </div>
+
+            <ul class="footer-list">
+                <li>
+                    <h3>Blog</h3>
+                </li>
+
+                <li>
+                    <a href="#" class="footer-link">Tech</a>
+                </li>
+
+                <li>
+                    <a href="#" class="footer-link">Adventures</a>
+                </li>
+
+                <li>
+                    <a href="#" class="footer-link">Musics</a>
+                </li>
+            </ul>
+
+            <ul class="footer-list">
+                <li>
+                    <h3>Products</h3>
+                </li>
+
+                <li>
+                    <a href="#" class="footer-link">App</a>
+                </li>
+
+                <li>
+                    <a href="#" class="footer-link">Desktop</a>
+                </li>
+
+                <li>
+                    <a href="#" class="footer-link">Cloud</a>
+                </li>
+            </ul>
+
+            <div id="footer_subscribe">
+                <h3>Subscribe</h3>
+                <p>Coloque o seu e-mail para ser notificado sobre nossos novos eventos</p>
+
+                <div id="input_group">
+                    <input type="email" id="email">
+                    <button><i class="fa-regular fa-envelope"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer_copyright">
+            &#169
+            2023 all rights reserved
+        </div>
+    </footer>
 </body>
+<script src="login.js"></script>
 </html>
