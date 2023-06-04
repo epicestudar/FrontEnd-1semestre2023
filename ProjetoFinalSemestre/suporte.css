@@ -18,6 +18,7 @@
     --color-neutral-30: #a8a29e;
     --color-neutral-40: #f5f5f5;
 }
+
 body{
     min-height: 100vh;
     background: var(--bg-color);
@@ -63,6 +64,7 @@ header{
     margin: 0px 30px;
     transition: all .50s ease;
 }
+
 .navbar a:hover{
     color: var(--main-color);
 }
@@ -100,6 +102,7 @@ header{
     z-index: 10001;
     display: none;
 }
+
 @media (max-width: 1280px){
     header{
         padding: 14px 2%;
@@ -144,145 +147,6 @@ header{
     .navbar.open{
         right: 2%;
     }
-}
-
-.box{
-    font-family: Arial, Helvetica, sans-serif;
-    position: absolute;
-    top: 80%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(8, 53, 78, 0.6);
-    padding: 15px;
-    border-radius: 15px;
-    width: 32%;
-    color: white;
-}
-
-fieldset{
-    border: 3px solid dodgerblue;
-}
-legend{
-    border: 1px solid dodgerblue;
-    padding: 10px;
-    text-align: center;
-    background-color: dodgerblue;
-    border-radius: 8px;
-}
-
-.inputBox{
-    position: relative;
-}
-.inputUser{
-    background: none;
-    border: none;
-    border-bottom: 1px solid white;
-    outline: none;
-    color: white;
-    font-size: 15px;
-    width: 95%;
-    letter-spacing: 1px;
-}
-.inputEmail{
-    top: 125px;
-    display: flex;
-    position: absolute;
-    pointer-events: none;
-    transition: .5s;
-}
-.inputUser:focus ~ .inputEmail, .inputUser:valid ~ .inputEmail{
-    top: 105px;
-    font-size: 12px;
-    color: dodgerblue;
-}
-
-.inputSenha{
-    top: 179px;
-    display: flex;
-    position: absolute;
-    pointer-events: none;
-    transition: .5s;
-}
-
-.inputUser:focus ~ .inputSenha, .inputUser:valid ~ .inputSenha{
-    top: 160px;
-    font-size: 12px;
-    color: dodgerblue;
-}
-
-.inputCidade{
-    top: 375px;
-    display: flex;
-    position: absolute;
-    pointer-events: none;
-    transition: .5s;
-}
-
-.inputUser:focus ~ .inputCidade, .inputUser:valid ~ .inputCidade{
-    top: 360px;
-    font-size: 12px;
-    color: dodgerblue;
-}
-
-.inputEstado{
-    top: 428px;
-    display: flex;
-    position: absolute;
-    pointer-events: none;
-    transition: .5s;
-}
-
-.inputUser:focus ~ .inputEstado, .inputUser:valid ~ .inputEstado{
-    top: 408px;
-    font-size: 12px;
-    color: dodgerblue;
-}
-
-.inputTel{
-    top: 482px;
-    display: flex;
-    position: absolute;
-    pointer-events: none;
-    transition: .5s;
-}
-
-.inputUser:focus ~ .inputTel, .inputUser:valid ~ .inputTel{
-    top: 462px;
-    font-size: 12px;
-    color: dodgerblue;
-}
-
-.inputName{
-    top: 70px;
-    display: flex;
-    position: absolute;
-    pointer-events: none;
-    transition: .5s;
-}
-.inputUser:focus ~ .inputName, .inputUser:valid ~ .inputName{
-    top: 55px;
-    font-size: 12px;
-    color: dodgerblue;
-}
-#data_nascimento{
-    border: none;
-    padding: 8px;
-    border-radius: 10px;
-    outline: none;
-    font-size: 15px;
-}
-#submit{
-    background-image: linear-gradient(to right, rgb(0, 92, 197), rgb(90, 20, 220));
-    width: 80%;
-    border: none;
-    padding: 15px;
-    color: white;
-    font-size: 15px;
-    cursor: pointer;
-    border-radius: 10px;
-}
-#submit:hover{
-    background-image: linear-gradient(to right, rgb(0, 80, 172), rgb(80, 19, 195));
 }
 
 footer{
@@ -411,5 +275,130 @@ footer{
     #footer_content{
         grid-template-columns: repeat(1, 1fr);
         padding: 3rem 2rem;
+    }
+}
+
+.container{
+    
+    width: 85%;
+   padding: 20px 60px 30px 40px;
+    background: #1a1313;
+    border-radius: 6px;
+    margin-left: 80px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.container .content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container .content .left-side{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 10px;
+    justify-content: center;
+    margin-top: 15px;
+    position: relative;
+}
+
+.content .left-side::before{
+    content: '';
+    position: absolute;
+    height: 70%;
+    width: 2px;
+    right: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #fff;
+}
+
+.content .left-side .details{
+    margin: 14px;
+    text-align: center;
+}
+
+.content .left-side .details i{
+    font-size: 30px;
+    color: #90562E;
+    margin-bottom: 10px;
+}
+.content .left-side .details .topic{
+    font-size: 18px;
+    font-weight: 500;
+}
+.content .left-side .details .text-one, .content .left-side .details .text-two{
+    font-size: 14px;
+    color: #afafb6;
+}
+.container .content .right-side{
+    width: 75%;
+    margin-left: 75px;
+}
+.content .right-side .topic-box{
+    font-size: 23px;
+    font-weight: 600;
+    color: #90562E;
+}
+.right-side .input-box{
+    height: 50px;
+    width: 100%;
+    margin: 12px 0;
+}
+.right-side .input-box input, .right-side .input-box textarea{
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: #f0f1f8;
+    border-radius: 6px;
+    padding: 0 15px;
+    resize: none;
+}
+.right-side .message-box{
+    min-height: 6px;
+}
+.right-side .input-box textarea{
+    padding-top: 6px;
+}
+.right-side .button input[type="button"]:hover{
+    background: #c1ac9c;
+}
+@media (max-width: 950px){
+    .cointainer{
+        width: 90%;
+        padding: 30px 40px 40px 35px;
+    }
+    .container .content .right-side{
+        width: 75%;
+        margin-left: 55px;
+    }
+}
+
+@media (max-width: 820px){
+    .container{
+        margin: 40px 0;
+        height: 100%;
+    }
+    .container .content{
+        flex-direction: column-reverse;
+    }
+    .container .content .left-side{
+        width: 100%;
+        flex-direction: row;
+        margin-top: 40px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .container .content .left-side::before{
+        display: none;
+    }
+    .container .content .right-side{
+        width: 100%;
+        margin-left: 0;
     }
 }

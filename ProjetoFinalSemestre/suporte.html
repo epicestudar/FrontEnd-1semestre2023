@@ -4,76 +4,81 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página inicial</title>
+    <title>Página de Suporte/Contato</title>
+    <link rel="stylesheet" href="suporte.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="home.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
-    <link rel="stylesheet"
-  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,600&display=swap" rel="stylesheet">
-
+       <link rel="stylesheet"
+     href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,600&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <a href="#" class="logo"><i class="ri-home-3-fill"></i><span>GameZone</span></a>
 
         <ul class="navbar">
-            <li><a href="home.html" class="active">Home</a></li>
+            <li><a href="#" class="active">Home</a></li>
             <li><a href="#">Abouts us</a></li>
             <li><a href="#">Services</a></li>
             <li><a href="#">Blog</a></li>
-            <li><a href="suporte.html">Contact</a></li>
+            <li><a href="#">Contact</a></li>
         </ul>
 
         <div class="main">
             <a href="#" class="user"><i class="ri-user-3-fill"></i>Sign in</a>
-            <a href="cadastroCliente.html">Register</a>
+            <a href="cadastro.html">Register</a>
             <div class="bx bx-menu" id="menu-icon"></div>
         </div>
-    </header>
+    </header><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
-    <div class="container-slider">
-        <button id="prev-button"><img src="imgHome/arrow.png" alt="prev-button"></button>
-        <div class="container-images">
-            <img src="imgHome/thumb.png" alt="" class="slider on">
-            <img src="imgHome/thumbKurumi.png" alt="" class="slider">
+    <div class="container">
+        <div class="content">
+            <div class="left-side">
+                <div class="adress details">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div class="topic">Endereço</div>
+                    <div class="text-one">Rua dos Bobos, n° 0</div>
+                    <div class="text-two">Bairro Cidade</div>
+                </div>
+                <div class="adress details">
+                    <i class="fas fa-envelope"></i>
+                    <div class="topic">Email</div>
+                    <div class="text-one">fazuelly@gmail.com</div>
+                    <div class="text-two">fazu22@gmail.com</div>
+                </div>
+                <div class="adress details">
+                    <i class="fas fa-phone-alt"></i>
+                    <div class="topic">Telefone</div>
+                    <div class="text-one">(19)98250-1287</div>
+                    <div class="text-two">3456-6666</div>
+                </div>
+            </div>
+
+            <div class="right-side">
+                <div class="topic-box">Envie a sua mensagem</div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum suscipit cum, non porro doloremque beatae ipsam rerum enim unde distinctio, illo voluptate explicabo placeat odio labore quia tenetur ex provident.</p>
+
+                <form action="#">
+                    <div class="input-box">
+                        <input type="text" placeholder="Digite seu nome" required>
+                    </div>
+                    <div class="input-box">
+                        <input type="email" placeholder="Digite o seu e-mail aqui" required>
+                    </div>
+                    <div class="input-box message-box">
+                        <textarea placeholder="Digite sua mensagem"></textarea>
+                    </div>
+
+                    <div class="button">
+                        <input type="button" value="enviar">
+                    </div>
+                </form>
+            </div>
         </div>
-        <button id="next-button"><img src="imgHome/arrow.png" alt="next-button"></button>
-    </div>
+    </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
-    <div class="texto-eventos">
-        <h2>Eventos em destaque</h2>
-    </div>
-    <main class="cards">
-        <section class="card forza">
-            <div class="icon">
-                <img src="imgHome/forza.png" alt="forza">
-            </div>
-            <h3>Forza Horizon 7</h3>
-            <span>É apaixonado ou fã de jogos de carro? Então venha dirigir em alta velocidade (respeitando os limites do trânsito, é claro :D) e se divirita com Forza Horizon 7, o novo jogo da Microsoft e que ainda não foi lançado!. Isso, você só encontra na GameZone!</span>
-            <button><a href="google.com">Cadastre-se</a></button>
-        </section>
-
-        <section class="card csgo">
-            <div class="icon">
-                <img src="imgHome/csgo.png" alt="csgo">
-            </div>
-            <h3>CS 2</h3>
-            <span>É apaixonado por jogos de tiro e por Counter Strike? Está hypado para o lançamento do CS 2 que acontecerá no segundo semestre? Então venha testar em primeira mão e trocar MUITO TIRO, com um patrocínio EXCLUSIVO da Valve em nossa arena!</span>
-            <button><a href="google.com">Cadastre-se</a></button>
-        </section>
-
-        <section class="card fifa">
-            <div class="icon">
-                <img src="imgHome/fifa.png" alt="">
-            </div>
-            <h3>FIFA 24</h3>
-            <span>Gosta de jogos de futebol? Mais especificamente de FIFA? Então venha jogar com exclusividade FIFA 24, testar suas novas mecânicas e os novos times que estarão no jogo e dar o seu feedback sobre o FIFA 24. Isso você só encontra na GameZone!</span>
-            <button><a href="google.com">Cadastre-se</a></button>
-        </section>
-    </main><br><br><br><br><br><br><br><br>
 
     <footer>
         <div id="footer_content">
@@ -149,5 +154,5 @@
         </div>
     </footer>
 </body>
-<script src="home.js" defer></script>
+<script src="suporte.js"></script>
 </html>
