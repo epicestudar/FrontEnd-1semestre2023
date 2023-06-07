@@ -34,7 +34,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: transparent;
+    background: #1a1616;
     padding: 14px;
     transition: all .50s ease;
 }
@@ -280,9 +280,9 @@ footer{
 .container{
     max-width: 350px;
     min-height: 40vh;
-    margin-left: 450px;
+    margin-left: 505px;
     margin-right: 450px;
-    background-color: rgb(41, 48, 2);
+    background-color: rgb(40, 41, 33);
     font-family: 'Poppins', sans-serif;
     
     justify-content: center;
@@ -315,13 +315,16 @@ footer{
     position: relative;
 }
 .input-login input{
+    border: none;
+    background: none;
+    border-color: transparent;
     outline: none;
     font-size: 0.9rem;
     color: rgba(0, 0, 0, 0.7);
 }
 
 .input-login input::placeholder{
-    color: rgba(0, 0, 0, 0.5);
+    color: white;
 }
 
 input[type="submit"]{
@@ -350,12 +353,12 @@ input [type="submit"]:hover{
     margin-top: 1rem;
 }
 .cadastrar .span1{
-    color: rgba(0, 0, 0, 0.9);
+    color: rgba(53, 190, 57, 0.9);
     font-size: 14.8px;
     text-align: center;
 }
 .cadastrar .span2{
-    color: rgba(0, 0, 0, 0.9);
+    color: rgba(53, 190, 57, 0.9);
     font-size: 14.8px;
     text-align: center;
 }

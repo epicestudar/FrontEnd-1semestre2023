@@ -33,7 +33,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: transparent;
+    background: #1a1616;
     padding: 14px;
     transition: all .50s ease;
 }

@@ -34,7 +34,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: transparent;
+    background: #1a1616;
     padding: 14px;
     transition: all .50s ease;
 }
@@ -241,15 +241,20 @@ main.cards section.card button{
     font-size: 80%;
     font-weight: 500;
     color: white;
+    transition: all 0.5s ease;
 }
 main.cards section.card.forza button{
     background: linear-gradient(to right, #681b1b, #e01414);
 }
+main.cards section.card.forza button:hover{
+    background: linear-gradient(to right, #947272, #dbb6b6);
+}
+
 main.cards section.card.csgo button{
-    background: linear-gradient(to right, #3E8AFF, #BBDEFF);
+    background: linear-gradient(to right, #787e88, #97a1b1);
 }
 main.cards section.card.fifa button{
-    background: linear-gradient(to right, #9F66FF, #DFCBFF);
+   background-image: linear-gradient(to right, #664a4a, #916d6d);
 }
 
 main.cards section.card.forza{
@@ -288,7 +293,7 @@ main.cards section.card span{
 main.cards section.card.forza::before{
     content: '';
     position: absolute;
-    top:724px;
+    top:659px;
     right: 850px;
     border: 20px solid transparent;
     border-top: 20px solid #06d62e;
@@ -297,7 +302,7 @@ main.cards section.card.forza::before{
 main.cards section.card.csgo::before{
     content: '';
     position: absolute;
-    top:724px;
+    top:659px;
     right: 530px;
     border: 20px solid transparent;
     border-top: 20px solid #06d62e;
@@ -306,7 +311,7 @@ main.cards section.card.csgo::before{
 main.cards section.card.fifa::before{
     content: '';
     position: absolute;
-    top:724px;
+    top:659px;
     right: 210px;
     border: 20px solid transparent;
     border-top: 20px solid #06d62e;
