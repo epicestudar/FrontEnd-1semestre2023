@@ -151,24 +151,9 @@ header{
 }
 
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-}
-
-body{
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #f2f2f2;
-}
-
 section{
+  margin-left: 20vh;
+  margin-top: 10vh;
   position: relative;  
   height: 450px;
   width: 1075px;
