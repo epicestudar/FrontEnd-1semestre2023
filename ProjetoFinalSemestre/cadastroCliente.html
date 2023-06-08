@@ -36,60 +36,84 @@
 
     <br><br><br><br><br><br><br><br>
 
-    <div class="box">
-        <form action="">
-            <fieldset>
-                <legend><b>Formulário de clientes</b></legend>
-                <br>
-                <div class="input-box">
-                    <input type="text" name="nome" id="nome" class="inputUser" required>
-                    <label for="nome" class="inputName">Nome Completo</label>
-                </div>
-                <br><br>
-                <div class="input-box">
-                    <input type="text" name="email" id="email" class="inputUser" required>
-                    <label for="email" class="inputEmail">Email</label>
-                </div>
-                <br><br>
-                <div class="input-box">
-                    <input type="password" name="senha" id="senha" class="inputUser" required>
-                    <label for="senha" class="inputSenha">Senha</label>
-                </div>
-                <br>
-                <p>Sexo: </p><br>
-                <input type="radio" id="feminino" name="genero" value="feminino" required>
-                <label for="feminino" class="generoInput">Feminino</label><br>
+    <div class="container">
+        <div class="form-image">
+            <img src="imgCadastros/undraw_sign_up_n6im (2).svg" alt="">
+        </div>
+        <div class="form">
+            <form action="#">
+                <div class="form-header">
+                    <div class="title">
+                        <h1>Cadastre-se</h1>
+                    </div>
 
-                <input type="radio" id="masculino" name="genero" value="masculino" required>
-                <label for="masculino" class="generoInput">Masculino</label><br>
+                </div>
 
-                <input type="radio" id="outro" name="genero" value="outro" required>
-                <label for="outro" class="generoInput">Outro</label>
-                <br><br>
-            
-                    <label for="data_nascimento"><b>Data de nascimento:</b></label>
-                    <input type="date" name="data_nascimento" id="data_nascimento" required>
-               
-                <br><br>
-                <div class="input-box">
-                    <input type="text" name="cidade" id="cidade" class="inputUser" required>
-                    <label for="cidade" class="inputCidade">Cidade</label>
+                <div class="input-group">
+                    <div class="input-box">
+                        <label for="nome">Nome completo:</label>
+                        <input type="text" name="nome" id="nome" placeholder="Digite seu nome completo" required>
+                    </div>
+
+                    <div class="input-box">
+
+                        <label for="dataNascimento">Informe sua data de nascimento:</label>
+                        <input type="date" id="dataNascimento">
+                    </div>
+
+                    <div class="input-box">
+                        <label for="Email">Email:</label>
+                        <input type="email" name="email" id="email" placeholder="Digite seu email" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="senha">Senha:</label>
+                        <input type="password" name="password" id="password" placeholder="Informe a sua senha" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="cidade">Cidade:</label>
+                        <input type="text" name="cidade" id="cidade" placeholder="Informe a sua cidade" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="estado">Estado:</label>
+                        <input type="text" name="estado" id="estado"
+                            placeholder="Informe o seu estado" required>
+                    </div>
                 </div>
-                <br><br>
-                <div class="input-box">
-                    <input type="text" name="estado" id="estado" class="inputUser" required>
-                    <label for="estado" class="inputEstado">Estado</label>
+
+                <div class="gender-inputs">
+                    <div class="gender-title">
+                        <h6>Gênero: </h6>
+                    </div>
+
+                    <div class="gender-group">
+                        <div class="gender-input">
+                            <input type="radio" name="gender" id="female">
+                            <label for="female">Feminino</label>
+                        </div>
+
+                        <div class="gender-input">
+                            <input type="radio" name="gender" id="male">
+                            <label for="male">Masculino</label>
+                        </div>
+
+                        <div class="gender-input">
+                            <input type="radio" name="gender" id="outros">
+                            <label for="outros">Outro</label>
+                        </div>
+
+                    </div>
                 </div>
-                <br><br>
-                <div class="input-box">
-                    <input type="text" name="telefone" id="telefone" class="inputUser" required>
-                    <label for="telefone" class="inputTel">Telefone</label>
+
+                <div class="continue-button">
+                    <button><a href="#">Continuar</a>
+                    </button>
                 </div>
-                <br><br>
-                <center><input type="submit" name="submit" id="submit"></center>
-            </fieldset>
-        </form>
-    </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            </form>
+        </div>
+    </div><br><br><br><br><br><br><br><br><br>
 
     <footer>
         <div id="footer_content">
