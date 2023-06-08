@@ -280,8 +280,7 @@ footer{
 .container{
     max-width: 350px;
     min-height: 40vh;
-    margin-left: 750px;
-    margin-right: 450px;
+    margin-left: 83vh;
     background-color: rgb(40, 41, 33);
     font-family: 'Poppins', sans-serif;
     
@@ -433,3 +432,17 @@ input [type="submit"]:hover{
 .input-login input:focus ~ .underline::after{
     transform: scaleX(1);
 }
+@media screen and (max-width: 768px) {
+    .input-login,
+    .input-login input,
+    .cadastrar {
+      width: 100%;
+    }
+  
+    .input-login input[type="email"],
+    .input-login input[type="password"],
+    #submit {
+      width: 80%;
+      margin: 0 auto;
+    }
+  }
