@@ -486,6 +486,7 @@ section{
   }
 
   .card{
+    font-family: 'Poppins', sans-serif;
     display: flex;
     justify-content: center;
     position: relative;
@@ -502,6 +503,7 @@ section{
     width: 100%;
     background: #302e2e;;
     border-radius: 20px 20px 0 0;
+    z-index: -1;
   }
 
   .card .card-content{
@@ -634,10 +636,13 @@ section{
   }
   
   .evento1 h3{
+    color: black;
     text-align: center;
     margin-top: 6vh;
   }
   
   .evento1 span{
-    font-size: 0.80rem;
+    margin-top: 4vh;
+    font-size: 0.8rem;
+    color: black;
   }
