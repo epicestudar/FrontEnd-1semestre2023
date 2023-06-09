@@ -2,18 +2,18 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página inicial</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="cadastroEventos.css">
+    <title>Página de criar eventos</title>
+    <link rel="stylesheet" href="produtor.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
-    <link rel="stylesheet"
-  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,600&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,600&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -21,8 +21,8 @@
 
         <ul class="navbar">
             <li><a href="home.html" class="active">Home</a></li>
-            <li><a href="#">Seja um Produtor</a></li>
-            <li><a href="#">FAQ'S</a></li>
+            <li><a href="produtor.html">Seja um Produtor</a></li>
+            <li><a href="faq.html">FAQ'S</a></li>
             <li><a href="suporte.html">Suporte</a></li>
         </ul>
 
@@ -35,46 +35,60 @@
 
     <div class="container">
         <div class="form-image">
-            <img src="imgCadastros/undraw_mobile_login_re_9ntv (1).svg" alt="">
+            <img src="imgCadastros/undraw_schedule_re_2vro.svg" alt="">
         </div>
         <div class="form">
             <form action="#">
                 <div class="form-header">
                     <div class="title">
-                        <h1>Cadastre-se</h1>
+                        <h1>Crie seu evento</h1>
                     </div>
                    
                 </div>
 
                 <div class="input-group">
                     <div class="input-box">
-                        <label for="nome">Nome completo:</label>
-                        <input type="text" name="nome" id="nome" placeholder="Digite seu nome completo" required>
+                        <label for="nome">Nome do Evento:</label>
+                        <input type="text" name="nome" id="nome" placeholder="Digite o nome do seu evento" required>
                     </div>
 
                     <div class="input-box">
-                        <label for="idade">Idade:</label>
-                        <input type="number" name="idade" id="idade" placeholder="Informe sua idade" required>
+                        <label for="tipoEvento">Tipo de evento:</label>
+                        <select name="tipo" id="tipo">
+                            <option value="">Escolha um tipo</option>
+                            <option value="Terror">Jogos de terror</option>
+                            <option value="Ação">Jogos de ação</option>
+                            <option value="Infantil">Jogos infantis</option>
+                            <option value="Drama">Jogos dramáticos</option>
+                            <option value="Suspense">Jogos de suspense</option>
+                        </select>
                     </div>
 
                     <div class="input-box">
-                        <label for="Email" >Email:</label>
+                        <label for="localEvento" >Local do evento:</label>
+                        <select name="tipo" id="tipo">
+                        <option value="">Escolha um local</option>
+                        <option value="Terror">Campinas, SP</option>
+                        <option value="Ação">Belo Horizonte, MG</option>
+                        <option value="Infantil">Porto Alegre, RS</option>
+                        <option value="Drama">Angra dos Reis, RJ</option>
+                        <option value="Suspense">Salvador, BA</option>
+                    </select>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="data">Data do evento:</label>
+                        <input type="datetime-local" name="data" id="data" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="email">Email:</label>
                         <input type="email" name="email" id="email" placeholder="Digite seu email" required>
                     </div>
 
                     <div class="input-box">
-                        <label for="number">CPF:</label>
-                        <input type="tel" name="number" id="number" placeholder="xxx.xxx.xxx-xx" required>
-                    </div>
-
-                    <div class="input-box">
-                        <label for="password">Senha:</label>
-                        <input type="password" name="password" id="password" placeholder="Digite sua senha" required>
-                    </div>
-
-                    <div class="input-box">
-                        <label for="Confirmpassword" >Confirme sua senha:</label>
-                        <input type="confirmPassword" name="confirmPassword" id="confirmPassword" placeholder="Digite sua senha" required>
+                        <label for="senha" >Senha:</label>
+                        <input type="password" name="senha" id="senha" placeholder="Digite sua senha" required>
                     </div>
                 </div>
 
@@ -185,5 +199,4 @@
         </div>
     </footer>
 </body>
-<script src="home.js" defer></script>
 </html>
