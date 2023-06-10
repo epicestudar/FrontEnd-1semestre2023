@@ -123,7 +123,7 @@ header{
         top: 100%;
         right: -100%;
         width: 270px;
-        height: 44vh;
+        height: 37vh;
         background: var(--main-color);
         display: flex;
         flex-direction: column;
@@ -338,10 +338,11 @@ header{
     }
 
     .container{
-        width: 50%;
+        margin-right: 5vh;
+        width: 70%;
     }
     .form{
-        width: 50%;
+        width: 70%;
     }
 
     @media screen and (max-width: 1064px) {
@@ -354,7 +355,7 @@ header{
             overflow: scroll;
             flex-wrap: nowrap;
             max-height: 10rem;
-            padding-right: 5rem;
+            padding-right: 3rem;
         }
         .gender-inputs{
             margin-top: 2rem;
@@ -364,6 +365,30 @@ header{
         }
         .gender-input{
             margin-top: 0.5rem;
+        }
+        .title{
+            margin-left: 10vh;
+            text-align: center;
+        }
+        .card-btn{
+    width: 55%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+        .card-btn button{
+            margin-right: 16vh;
+            height: 30%;
+            width: 40%;
+            font-size: 16px;
+            font-weight: bolder;
+            color: dodgerblue;
+            border: solid 3px dodgerblue;
+            border-radius: 2.5em;
+            background-color: white;
+            cursor: pointer;
+            transition: .3s;
         }
     }
 }

@@ -120,7 +120,7 @@ header{
         top: 100%;
         right: -100%;
         width: 270px;
-        height: 44vh;
+        height: 37vh;
         background: var(--main-color);
         display: flex;
         flex-direction: column;
@@ -582,10 +582,10 @@ footer{
     }
 
     .container{
-        width: 50%;
+        width: 70%;
     }
     .form{
-        width: 50%;
+        width: 70%;
     }
 
     @media screen and (max-width: 1064px) {
