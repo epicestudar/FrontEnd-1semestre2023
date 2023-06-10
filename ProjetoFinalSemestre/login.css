@@ -432,6 +432,44 @@ input [type="submit"]:hover{
 .input-login input:focus ~ .underline::after{
     transform: scaleX(1);
 }
+
+    @media screen and (max-width: 1330px) {
+    
+        .container{
+            width: 70%;
+        }
+        .content{
+            width: 70%;
+        }
+        .cadastrar{
+            width: 70%;
+        }
+    }
+    
+        @media screen and (max-width: 1064px) {
+            .container{
+                width: 70%;
+                height: auto;
+            }
+            .input-login, .underline, .cadastrar{
+                flex-direction: column;
+                
+                flex-wrap: nowrap;
+                max-height: 10rem;
+                padding-right: 5rem;
+            }
+            .social-media{
+                margin-top: 2rem;
+            }
+            .twitter, .facebook{
+                flex-direction: column;
+            }
+            .social-media{
+                margin-top: 0.5rem;
+            }
+        }
+    
+
 @media screen and (max-width: 768px) {
     .input-login,
     .input-login input,

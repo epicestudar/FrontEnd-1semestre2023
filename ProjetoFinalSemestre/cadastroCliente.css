@@ -587,6 +587,7 @@ footer{
     .form{
         width: 70%;
     }
+}
 
     @media screen and (max-width: 1064px) {
         .container{
@@ -610,4 +611,3 @@ footer{
             margin-top: 0.5rem;
         }
     }
-}
