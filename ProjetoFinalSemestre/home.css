@@ -44,12 +44,12 @@ header{
 }
 .logo i{
     color: var(--main-color);
-    font-size: 28px;
+    font-size: 30px;
     margin-right: 3px;    
 }
 .logo span{
     color: var(--text-color);
-    font-size: 1.7rem;
+    font-size: 1.6rem;
     font-weight: 600;
 }
 
@@ -250,11 +250,19 @@ main.cards section.card.forza button:hover{
     background: linear-gradient(to right, #947272, #dbb6b6);
 }
 
+main.cards section.card.csgo button:hover{
+    background: linear-gradient(to right, #947272, #dbb6b6);
+}
+
+main.cards section.card.fifa button:hover{
+    background: linear-gradient(to right, #947272, #dbb6b6);
+}
+
 main.cards section.card.csgo button{
-    background: linear-gradient(to right, #787e88, #97a1b1);
+    background: linear-gradient(to right, #681b1b, #e01414);
 }
 main.cards section.card.fifa button{
-   background-image: linear-gradient(to right, #664a4a, #916d6d);
+    background: linear-gradient(to right, #681b1b, #e01414);
 }
 
 main.cards section.card.forza{
@@ -471,7 +479,7 @@ footer{
     position:absolute;
     border-radius: 10px;
 }
-section{
+.abla{
     margin-left: 20vh;
     margin-top: 10vh;
     position: relative;  
@@ -515,7 +523,7 @@ section{
     z-index: 100;
   }
   
-  section .card .image{
+  .abla .card .image{
     height: 100px;
     width: 100px;
     border-radius: 50%;
@@ -523,7 +531,7 @@ section{
     background: #302e2e;
   }
   
-  section .card .image img{
+  .abla .card .image img{
     height: 100%;
     width: 100%;
     object-fit: cover;
