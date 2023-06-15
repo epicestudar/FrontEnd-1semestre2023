@@ -44,12 +44,12 @@ header{
 }
 .logo i{
     color: var(--main-color);
-    font-size: 28px;
+    font-size: 30px;
     margin-right: 3px;    
 }
 .logo span{
     color: var(--text-color);
-    font-size: 1.7rem;
+    font-size: 1.6rem;
     font-weight: 600;
 }
 
@@ -280,8 +280,8 @@ footer{
 .container{
     max-width: 350px;
     min-height: 40vh;
-    margin-left: 83vh;
-    background-color: rgb(40, 41, 33);
+    margin-left: 42%;
+    background-color: rgb(59, 61, 48);
     font-family: 'Poppins', sans-serif;
     
     justify-content: center;
@@ -294,6 +294,8 @@ footer{
     border-radius: 8px;
 }
 .content h2{
+    display: flex;
+    justify-content: center;
     font-weight: 600;
     margin-bottom: 2rem;
     position: relative;
@@ -303,8 +305,8 @@ footer{
     content: '';
     position: absolute;
     height: 4px;
-    
-    width: 25px;
+    margin-left: 38%;
+    width: 68px;
     bottom: 1.5px;
     left: 0;
     border-radius: 8px;
@@ -471,16 +473,26 @@ input [type="submit"]:hover{
     
 
 @media screen and (max-width: 768px) {
-    .input-login,
-    .input-login input,
-    .cadastrar {
-      width: 100%;
+    .container{
+        width: 35%;
+        flex-direction: column;
+        height: 100%;
     }
-  
-    .input-login input[type="email"],
-    .input-login input[type="password"],
-    #submit {
-      width: 80%;
-      margin: 0 auto;
+    .span2, .social-media{
+        display: none;
+    }
+    .content h2{
+        display: flex;
+        justify-content: center;
+        
+    }
+    .content h2:before{
+        display: none;
+    }
+    .cadastrar .span1{
+        
+        color: rgba(53, 190, 57, 0.9);
+        font-size: 13px;
+        text-align: center;
     }
   }

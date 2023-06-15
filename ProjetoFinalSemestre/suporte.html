@@ -20,7 +20,7 @@
 
         <ul class="navbar">
             <li><a href="home.html">Home</a></li>
-            <li><a href="#">Seja um Produtor</a></li>
+            <li><a href="produtor.html">Seja um Produtor</a></li>
             <li><a href="faq.html">FAQ'S</a></li>
             <li><a href="suporte.html" class="active">Suporte</a></li>
         </ul>
@@ -61,17 +61,17 @@
                 <br>
                 <form action="#">
                     <div class="input-box">
-                        <input type="text" placeholder="Digite seu nome" required>
+                        <input type="text" id="nome" placeholder="Digite seu nome" required>
                     </div>
                     <div class="input-box">
-                        <input type="email" placeholder="Digite o seu e-mail aqui" required>
+                        <input type="email" id="email" placeholder="Digite o seu e-mail aqui" required>
                     </div>
                     <div class="input-box message-box">
                         <textarea placeholder="Digite sua mensagem"></textarea>
                     </div><br>
 
                     <div class="button">
-                        <center><input type="button" value="Enviar"> </center>
+                        <center><input type="button" value="Enviar" onclick="Contato()"> </center>
                     </div>
                 </form>
             </div>
@@ -153,5 +153,5 @@
         </div>
     </footer>
 </body>
-<script src="home.js"></script>
+<script src="suporte.js"></script>
 </html>

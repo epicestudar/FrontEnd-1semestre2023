@@ -480,10 +480,10 @@ footer{
     border-radius: 10px;
 }
 .abla{
-    margin-left: 20vh;
-    margin-top: 10vh;
+    margin-left: 24%;
+    margin-top: 5%;
     position: relative;  
-    height: 450px;
+    height: 500px;
     width: 1075px;
     display: flex;
     align-items: center;
@@ -654,16 +654,3 @@ footer{
     font-size: 0.8rem;
     color: black;
   }
-
-  @media screen and (max-width: 720px) {
-    .abla section{
-        flex-direction: column;
-    }
-
-    .abla .swiper{
-        margin-left: 0;
-        margin-bottom: 32px;
-    }
-
-    
-}

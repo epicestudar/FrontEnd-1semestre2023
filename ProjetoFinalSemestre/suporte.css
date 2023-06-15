@@ -44,12 +44,12 @@ header{
 }
 .logo i{
     color: var(--main-color);
-    font-size: 28px;
+    font-size: 30px;
     margin-right: 3px;    
 }
 .logo span{
     color: var(--text-color);
-    font-size: 1.7rem;
+    font-size: 1.6rem;
     font-weight: 600;
 }
 

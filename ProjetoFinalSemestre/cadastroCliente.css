@@ -43,12 +43,12 @@ header{
 }
 .logo i{
     color: var(--main-color);
-    font-size: 28px;
+    font-size: 30px;
     margin-right: 3px;    
 }
 .logo span{
     color: var(--text-color);
-    font-size: 1.7rem;
+    font-size: 1.6rem;
     font-weight: 600;
 }
 
@@ -146,144 +146,6 @@ header{
     }
 }
 
-.box{
-    font-family: Arial, Helvetica, sans-serif;
-    position: absolute;
-    top: 80%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(8, 53, 78, 0.6);
-    padding: 15px;
-    border-radius: 15px;
-    width: 32%;
-    color: white;
-}
-
-fieldset{
-    border: 3px solid dodgerblue;
-}
-legend{
-    border: 1px solid dodgerblue;
-    padding: 10px;
-    text-align: center;
-    background-color: dodgerblue;
-    border-radius: 8px;
-}
-
-.inputBox{
-    position: relative;
-}
-.inputUser{
-    background: none;
-    border: none;
-    border-bottom: 1px solid white;
-    outline: none;
-    color: white;
-    font-size: 15px;
-    width: 95%;
-    letter-spacing: 1px;
-}
-.inputEmail{
-    top: 125px;
-    display: flex;
-    position: absolute;
-    pointer-events: none;
-    transition: .5s;
-}
-.inputUser:focus ~ .inputEmail, .inputUser:valid ~ .inputEmail{
-    top: 105px;
-    font-size: 12px;
-    color: dodgerblue;
-}
-
-.inputSenha{
-    top: 179px;
-    display: flex;
-    position: absolute;
-    pointer-events: none;
-    transition: .5s;
-}
-
-.inputUser:focus ~ .inputSenha, .inputUser:valid ~ .inputSenha{
-    top: 160px;
-    font-size: 12px;
-    color: dodgerblue;
-}
-
-.inputCidade{
-    top: 375px;
-    display: flex;
-    position: absolute;
-    pointer-events: none;
-    transition: .5s;
-}
-
-.inputUser:focus ~ .inputCidade, .inputUser:valid ~ .inputCidade{
-    top: 360px;
-    font-size: 12px;
-    color: dodgerblue;
-}
-
-.inputEstado{
-    top: 428px;
-    display: flex;
-    position: absolute;
-    pointer-events: none;
-    transition: .5s;
-}
-
-.inputUser:focus ~ .inputEstado, .inputUser:valid ~ .inputEstado{
-    top: 408px;
-    font-size: 12px;
-    color: dodgerblue;
-}
-
-.inputTel{
-    top: 482px;
-    display: flex;
-    position: absolute;
-    pointer-events: none;
-    transition: .5s;
-}
-
-.inputUser:focus ~ .inputTel, .inputUser:valid ~ .inputTel{
-    top: 462px;
-    font-size: 12px;
-    color: dodgerblue;
-}
-
-.inputName{
-    top: 70px;
-    display: flex;
-    position: absolute;
-    pointer-events: none;
-    transition: .5s;
-}
-.inputUser:focus ~ .inputName, .inputUser:valid ~ .inputName{
-    top: 55px;
-    font-size: 12px;
-    color: dodgerblue;
-}
-#data_nascimento{
-    border: none;
-    padding: 8px;
-    border-radius: 10px;
-    outline: none;
-    font-size: 15px;
-}
-#submit{
-    background-image: linear-gradient(to right, rgb(0, 92, 197), rgb(90, 20, 220));
-    width: 80%;
-    border: none;
-    padding: 15px;
-    color: white;
-    font-size: 15px;
-    cursor: pointer;
-    border-radius: 10px;
-}
-#submit:hover{
-    background-image: linear-gradient(to right, rgb(0, 80, 172), rgb(80, 19, 195));
-}
 
 footer{
     font-family: 'Inter', sans-serif;
@@ -416,7 +278,7 @@ footer{
 .container {
     justify-content: center;
     width: 80%;
-    height: 90vh;
+    height: 60vh;
     display: flex;
     box-shadow: 5px 5px 10px rgb(0, 0, .212);
     margin-left: 20vh;
@@ -552,7 +414,7 @@ footer{
     color: black;
 }
 
-.continue-button button{
+.continue-button input{
     width: 100%;
     margin-top: 2.5rem;
     border: none;
@@ -560,18 +422,16 @@ footer{
     padding: 0.62rem;
     border-radius: 5px;
     cursor: pointer;
-}
-
-.continue-button button:hover{
-    background-color: purple;
-}
-
-.continue-button button a{
-    text-decoration: none;
     font-size: 0.93rem;
     font-weight: 500;
     color: white;
 }
+
+.continue-button input:hover{
+    background-color: purple;
+}
+
+
 .gender-inputs .gender-title h6{
     font-size: 0.89rem;
 }

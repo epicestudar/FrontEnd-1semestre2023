@@ -43,12 +43,12 @@ header{
 }
 .logo i{
     color: var(--main-color);
-    font-size: 28px;
+    font-size: 30px;
     margin-right: 3px;    
 }
 .logo span{
     color: var(--text-color);
-    font-size: 1.7rem;
+    font-size: 1.6rem;
     font-weight: 600;
 }
 
@@ -149,7 +149,7 @@ header{
 .container {
     justify-content: center;
     width: 80%;
-    height: 90vh;
+    height: 60vh;
     display: flex;
     box-shadow: 5px 5px 10px rgb(0, 0, .212);
     margin-left: 20vh;
