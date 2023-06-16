@@ -479,6 +479,7 @@ footer{
     position:absolute;
     border-radius: 10px;
 }
+
 .abla{
     margin-left: 24%;
     margin-top: 5%;
@@ -654,3 +655,31 @@ footer{
     font-size: 0.8rem;
     color: black;
   }
+
+  @media screen and (max-width: 768px) {
+    
+
+    .swiper-wrapper.content{
+       
+      margin-top: 15%;
+      flex-direction: wrap;
+    }
+  
+    .card-content {
+      width: 100%;
+    }
+
+    .evento1 h3{
+        margin-top: 30%;
+    }
+    .swiper-button-next, .swiper-button-prev, .swiper-pagination {
+        display: none;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .card {
+      width: 100%;
+    }
+  }
+  
