@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página de Login</title>
     <link rel="stylesheet" href="login.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
- <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
-    <link rel="stylesheet"
-  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,600&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header>
         <a href="#" class="logo"><i class="ri-home-3-fill"></i><span>GameZone</span></a>
@@ -33,40 +36,45 @@
     </header><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
     <div class="container">
-        <div class="content">
-            <h2>Login</h2>
-            <div class="input-login">
-                <input type="email" name="email" placeholder="Digite seu email" id="email" class="inputUser" required>
-                <div class="underline"></div>
-            </div><br>
-            <div class="input-login">
-                <input type="password" name="senha" placeholder="Digite sua senha" id="senha" class="inputUser" required>
-                <div class="underline"></div>
+        <section class="subContainer">
+            <div class="content">
+                <h2>Login</h2>
+                <div class="input-login">
+                    <input type="email" name="email" placeholder="Digite seu email" id="email" class="inputUser"
+                        required>
+                    <div class="underline"></div>
+                </div><br>
+                <div class="input-login">
+                    <input type="password" name="senha" placeholder="Digite sua senha" id="senha" class="inputUser"
+                        required>
+                    <div class="underline"></div>
+                </div>
+
+                <input type="submit" name="submit" id="submit" value="Entrar" onclick="Login()">
             </div>
 
-            <input type="submit" name="submit" id="submit" value="Entrar" onclick="Login()">
-        </div>
+            <div class="cadastrar">
+                <span class="span1">Ainda não tem uma conta? <a class="a1" href="cadastroCliente.html">Cadastre-se
+                        aqui</a></span><br><br>
+                <span class="span2">Ou então conecte-se com sua rede social:</span>
 
-        <div class="cadastrar">
-            <span class="span1">Ainda não tem uma conta? <a class="a1" href="cadastroCliente.html">Cadastre-se aqui</a></span><br><br>
-            <span class="span2">Ou então conecte-se com sua rede social:</span>
-
-            <div class="social-media">
-                <div class="twitter">
-                    <a href="#">
-                        <i class="fab fa-twitter"></i>
-                        Entrar com Twitter
-                    </a>
+                <div class="social-media">
+                    <div class="twitter">
+                        <a href="#">
+                            <i class="fab fa-twitter"></i>
+                            Entrar com Twitter
+                        </a>
+                    </div>
+                    <div class="facebook">
+                        <a href="#">
+                            <i class="fab fa-facebook">
+                            </i>
+                            Entrar com Facebook
+                        </a>
+                    </div>
                 </div>
-                <div class="facebook">
-                    <a href="#">
-                        <i class="fab fa-facebook">
-                        </i>
-                        Entrar com Facebook
-                    </a>
-                </div>
-               </div>
-        </div>
+            </div>
+        </section>
     </div> <br><br><br><br><br><br><br><br><br><br>
 
     <footer>
@@ -144,4 +152,5 @@
     </footer>
 </body>
 <script src="login.js"></script>
+
 </html>
