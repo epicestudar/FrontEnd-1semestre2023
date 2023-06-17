@@ -150,12 +150,18 @@ header{
 }
 
 .container {
-    justify-content: center;
-    width: 80%;
-    height: 85vh;
     display: flex;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.subContainer{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    height: 120vh;
     box-shadow: 5px 5px 10px rgb(0, 0, .212);
-    margin-left: 20vh;
 }
 
 .form-image {
@@ -181,8 +187,7 @@ header{
     padding: 3rem;
 }
 
-.form-header{
-    margin-bottom: 3rem;
+.form-header {
     display: flex;
     justify-content: space-between;
 }
@@ -341,8 +346,13 @@ header{
         margin-right: 5vh;
         width: 70%;
     }
+
+    .subContainer{
+        height: 100vh;
+    }
+
     .form{
-        width: 70%;
+        width: 100%;
     }
 
     @media screen and (max-width: 1064px) {
@@ -368,6 +378,7 @@ header{
         }
         .title{
             margin-left: 10vh;
+            margin-bottom: 20px;
             text-align: center;
         }
         .card-btn{

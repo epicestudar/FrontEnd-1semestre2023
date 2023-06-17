@@ -480,9 +480,16 @@ footer{
     border-radius: 10px;
 }
 
+.section1{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .abla{
-    margin-left: 24%;
-    margin-top: 5%;
+    /* margin-left: 24%;
+    margin-top: 5%; */
     position: relative;  
     height: 500px;
     width: 1075px;
@@ -657,13 +664,6 @@ footer{
   }
 
   @media screen and (max-width: 768px) {
-    
-
-    .swiper-wrapper.content{
-       
-      margin-top: 15%;
-      flex-direction: wrap;
-    }
   
     .card-content {
       width: 100%;
